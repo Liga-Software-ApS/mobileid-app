@@ -1,0 +1,1 @@
+openssl req -x509 -nodes -newkey rsa:4096 -keyout efs.key -out efs.cer -days 365 -subj '/OU=EFS File Encryption Certificate/L=EFS/CN=efs' -addext 'extendedKeyUsage=1.3.6.1.4.1.311.10.3.4.1' -addext 'basicConstraints=CA:FALSE' -addext 'subjectAltName=otherName:msUPN;UTF8:sb@sb.local'

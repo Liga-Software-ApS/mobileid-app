@@ -1,0 +1,150 @@
+{
+    "helloWorld": "Hello World!",
+    "@helloWorld": {
+      "description": "The conventional newborn programmer greeting"
+    },
+
+    "homeDescription": "When you are ready to approve with MobileID, it is displayed here.",
+    "@homeDescription": {
+      "description": "Bla"
+    },
+
+
+    "apiUnreachable": "We couldn't reach our servers.",
+    "@apiUnreachable": {
+      "description": "Bla"
+    },
+
+    "apiUnknown": "We don't know what happend.",
+    "@apiUnknown": {
+      "description": "Bla"
+    },
+
+
+
+    "authTitle": "Register",
+    "@authTitle": {
+      "description": "Bla"
+    },
+    "authDescription": "Enter your PIN and complete the registration",
+    "@authDescription": {
+      "description": "Bla"
+    },
+    "authEnterPin": "Enter your PIN number",
+    "@authEnterPin": {
+      "description": "Bla"
+    },
+    "authComplexPin": "Have are more complex PIN?",
+    "@authComplexPin": {
+      "description": "Bla"
+    },
+    "authSwitchKeyboard": "Switch input",
+    "@authSwitchKeyboard": {
+      "description": "Bla"
+    },
+    "authWrongPin": "PIN is wrong",
+    "@authWrongPin": {
+      "description": "Bla"
+    },
+
+    "confirmSignIn": "Confirm signin of {subject} to {target}.",
+    "@confirmSignIn": {
+      "description": "Bla",
+      "placeholders": {
+        "subject": {
+          "type": "String",
+          "example": "unknown@domain.com"
+        },
+        "target": {
+          "type": "String",
+          "example": "IDP"
+        }
+      }
+    },
+
+    "testtest": "PIN is wrong",
+    "@testtest": {
+      "description": "Bla"
+    },
+
+    "notificationErrorDescription": "We could not retrieve the notification details.",
+    "@notificationErrorDescription": {
+      "description": "Bla"
+    },
+
+    "notificationTitle": "Sign-in",
+    "@notificationTitle": {
+      "description": "Bla"
+    },
+
+    "notificationsEmptyToast": "There is nothing to do",
+    "@notificationsEmptyToast": {
+      "description": "Bla"
+    },
+    "notificationsPermissionRejected": "Notification permission rejected",
+    "@notificationsPermissionRejected": {
+      "description": "Bla"
+    },
+    "notificationsPermissionSkip": "Skip",
+    "@notificationsPermissionSkip": {
+      "description": "Bla"
+    },
+
+
+
+    "authCancel": "Cancel",
+    "@authCancel": {
+      "description": "Bla"
+    },
+    "authConfirm": "Confirm",
+    "@authConfirm": {
+      "description": "Bla"
+    },
+
+
+
+
+
+
+    "onboardingWelcomeTitle": "Welcome to MobileID",
+    "@onboardingWelcomeTitle": {
+      "description": "Bla"
+    },
+    "onboardingWelcomeDescription": "To get you started please get your card ready and continue",
+    "@onboardingWelcomeDescription": {
+      "description": "Bla"
+    },
+    "onboardingWelcomeButton": "Get started",
+    "@onboardingWelcomeButton": {
+      "description": "Bla"
+    },
+
+    "onboardingNotificationTitle": "Allow push notifications",
+    "@onboardingNotificationTitle": {
+      "description": "Bla"
+    },
+    "onboardingNotificationDescription": "Allow push notifications to make your sign in process easier",
+    "@onboardingNotificationDescription": {
+      "description": "Bla"
+    },
+    "onboardingNotificationButtonAllow": "Allow",
+    "@onboardingNotificationButtonAllow": {
+      "description": "Bla"
+    }
+    ,
+    "onboardingNotificationButtonReject": "Now now",
+    "@onboardingNotificationButtonReject": {
+      "description": "Bla"
+    },
+
+
+
+    "genericCancel": "Cancel",
+    "@genericCancel": {
+      "description": "Bla"
+    },
+    "genericConfirm": "Confirm",
+    "@genericConfirm": {
+      "description": "Bla"
+    }
+}

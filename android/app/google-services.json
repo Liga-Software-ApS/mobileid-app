@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "762770669911",
+    "project_id": "liga-mobileid-oss",
+    "storage_bucket": "liga-mobileid-oss.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:762770669911:android:e4d66b4875f51bbdbf7e12",
+        "android_client_info": {
+          "package_name": "dk.liga.mobileid.oss"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "762770669911-p78fif6ijq8t999auc3ueji0pv3cmsqa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbCAFMU1c-jcqHdluw0qI5_qY0OvS57Ok"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "762770669911-p78fif6ijq8t999auc3ueji0pv3cmsqa.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "762770669911-la7bp71fp05hjtit77901am2tvug39d6.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "dk.liga.mobileid.oss"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

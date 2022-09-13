@@ -1,0 +1,10 @@
+{
+    "dart.previewLsp": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true,
+        "source.organizeImports": true,
+        "source.sortMembers": true
+    },
+    "editor.formatOnSave": true,
+    "java.configuration.updateBuildConfiguration": "interactive"
+}
