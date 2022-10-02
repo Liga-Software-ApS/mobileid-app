@@ -66,6 +66,22 @@ class _SettingsView extends StatelessView<SettingsViewModel> {
               // ),
             ],
           ),
+          SettingsSection(
+            title: const Text('About'),
+            tiles: <SettingsTile>[
+              SettingsTile.navigation(
+                leading: const Icon(Icons.info),
+                title: const Text("About"),
+                onPressed: (ctx) async => viewModel.toAbout(),
+              ),
+              SettingsTile.navigation(
+                leading: const Icon(Icons.copyright),
+                trailing: const Text(""),
+                title: const Text("Liga Software ApS"),
+                onPressed: (ctx) async => viewModel.toAbout(),
+              ),
+            ],
+          ),
         ],
       ),
     );

@@ -10,23 +10,24 @@ import 'package:injectable/injectable.dart' as _i2;
 
 import 'application.dart' as _i3;
 import 'application/config_service.dart' as _i5;
-import 'application/cryptography_service.dart' as _i16;
+import 'application/cryptography_service.dart' as _i17;
 import 'application/firebase_service.dart' as _i4;
 import 'application/http_service.dart' as _i7;
 import 'application/user_service.dart' as _i9;
-import 'src/applets/applet.dart' as _i14;
+import 'src/applets/applet.dart' as _i15;
 import 'src/applets/connections/connection_interface.dart' as _i12;
 import 'src/applets/connections/flutternfc.dart' as _i13;
-import 'src/applets/gids/gids_applet.dart' as _i15;
+import 'src/applets/gids/gids_applet.dart' as _i16;
+import 'src/features/about/presentation/about_viewmodel.dart' as _i14;
 import 'src/features/auth/application/discovery_service.dart' as _i6;
-import 'src/features/auth/application/registration_service.dart' as _i19;
-import 'src/features/auth/presentation/auth_viewmodel.dart' as _i21;
-import 'src/features/home/application/fetch_service.dart' as _i17;
-import 'src/features/home/presentation/home_viewmodel.dart' as _i22;
+import 'src/features/auth/application/registration_service.dart' as _i20;
+import 'src/features/auth/presentation/auth_viewmodel.dart' as _i22;
+import 'src/features/home/application/fetch_service.dart' as _i18;
+import 'src/features/home/presentation/home_viewmodel.dart' as _i23;
 import 'src/features/notification/application/notification_service.dart'
-    as _i18;
+    as _i19;
 import 'src/features/notification/presentation/notification_viewmodel.dart'
-    as _i20;
+    as _i21;
 import 'src/features/onboarding/application/onboarding_service.dart' as _i8;
 import 'src/features/onboarding/presentation/onboarding_viewmodel.dart' as _i10;
 import 'src/features/settings/presentation/settings_viewmodel.dart'
@@ -58,30 +59,32 @@ _i1.GetIt $initGetIt(
   gh.factory<_i11.SettingsViewModel>(
       () => _i11.SettingsViewModel(get<_i5.IConfigService>()));
   gh.factory<_i12.SmartCardConnection>(() => _i13.NfcConnection());
-  gh.factory<_i14.Applet>(
-      () => _i15.GidsApplet(get<_i12.SmartCardConnection>()));
-  gh.factory<_i16.ICryptographyService>(
-      () => _i16.CryptographyService(get<_i14.Applet>()));
-  gh.factory<_i17.IFetchService>(
-      () => _i17.FetchService(get<_i7.IHttpService>()));
-  gh.factory<_i18.INotificationService>(() => _i18.NotificationService(
+  gh.factory<_i14.AboutViewModel>(
+      () => _i14.AboutViewModel(get<_i5.IConfigService>()));
+  gh.factory<_i15.Applet>(
+      () => _i16.GidsApplet(get<_i12.SmartCardConnection>()));
+  gh.factory<_i17.ICryptographyService>(
+      () => _i17.CryptographyService(get<_i15.Applet>()));
+  gh.factory<_i18.IFetchService>(
+      () => _i18.FetchService(get<_i7.IHttpService>()));
+  gh.factory<_i19.INotificationService>(() => _i19.NotificationService(
         get<_i7.IHttpService>(),
-        get<_i16.ICryptographyService>(),
+        get<_i17.ICryptographyService>(),
       ));
-  gh.factory<_i19.IRegistrationService>(() => _i19.RegistrationService(
+  gh.factory<_i20.IRegistrationService>(() => _i20.RegistrationService(
         get<_i7.IHttpService>(),
         get<_i5.IConfigService>(),
         get<_i6.IDiscoveryService>(),
         get<_i4.FirebaseService>(),
-        get<_i16.ICryptographyService>(),
+        get<_i17.ICryptographyService>(),
       ));
-  gh.factory<_i20.NotificationViewModel>(
-      () => _i20.NotificationViewModel(get<_i18.INotificationService>()));
-  gh.factory<_i21.AuthViewModel>(
-      () => _i21.AuthViewModel(get<_i19.IRegistrationService>()));
-  gh.factory<_i22.HomeViewModel>(() => _i22.HomeViewModel(
+  gh.factory<_i21.NotificationViewModel>(
+      () => _i21.NotificationViewModel(get<_i19.INotificationService>()));
+  gh.factory<_i22.AuthViewModel>(
+      () => _i22.AuthViewModel(get<_i20.IRegistrationService>()));
+  gh.factory<_i23.HomeViewModel>(() => _i23.HomeViewModel(
         get<_i9.IUserService>(),
-        get<_i17.IFetchService>(),
+        get<_i18.IFetchService>(),
         get<_i5.IConfigService>(),
         get<_i4.FirebaseService>(),
       ));
