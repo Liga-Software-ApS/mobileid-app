@@ -34,9 +34,16 @@ import 'src/features/settings/presentation/settings_viewmodel.dart'
 
 // ignore_for_file: lines_longer_than_80_chars
 /// initializes the registration of provided dependencies inside of [GetIt]
-_i1.GetIt $initGetIt(_i1.GetIt get,
-    {String? environment, _i2.EnvironmentFilter? environmentFilter}) {
-  final gh = _i2.GetItHelper(get, environment, environmentFilter);
+_i1.GetIt $initGetIt(
+  _i1.GetIt get, {
+  String? environment,
+  _i2.EnvironmentFilter? environmentFilter,
+}) {
+  final gh = _i2.GetItHelper(
+    get,
+    environment,
+    environmentFilter,
+  );
   gh.factory<_i3.ApplicationViewModel>(() => _i3.ApplicationViewModel());
   gh.singleton<_i4.FirebaseService>(_i4.FirebaseService());
   gh.factory<_i5.IConfigService>(() => _i5.ConfigService());
@@ -58,21 +65,25 @@ _i1.GetIt $initGetIt(_i1.GetIt get,
   gh.factory<_i17.IFetchService>(
       () => _i17.FetchService(get<_i7.IHttpService>()));
   gh.factory<_i18.INotificationService>(() => _i18.NotificationService(
-      get<_i7.IHttpService>(), get<_i16.ICryptographyService>()));
+        get<_i7.IHttpService>(),
+        get<_i16.ICryptographyService>(),
+      ));
   gh.factory<_i19.IRegistrationService>(() => _i19.RegistrationService(
-      get<_i7.IHttpService>(),
-      get<_i5.IConfigService>(),
-      get<_i6.IDiscoveryService>(),
-      get<_i4.FirebaseService>(),
-      get<_i16.ICryptographyService>()));
+        get<_i7.IHttpService>(),
+        get<_i5.IConfigService>(),
+        get<_i6.IDiscoveryService>(),
+        get<_i4.FirebaseService>(),
+        get<_i16.ICryptographyService>(),
+      ));
   gh.factory<_i20.NotificationViewModel>(
       () => _i20.NotificationViewModel(get<_i18.INotificationService>()));
   gh.factory<_i21.AuthViewModel>(
       () => _i21.AuthViewModel(get<_i19.IRegistrationService>()));
   gh.factory<_i22.HomeViewModel>(() => _i22.HomeViewModel(
-      get<_i9.IUserService>(),
-      get<_i17.IFetchService>(),
-      get<_i5.IConfigService>(),
-      get<_i4.FirebaseService>()));
+        get<_i9.IUserService>(),
+        get<_i17.IFetchService>(),
+        get<_i5.IConfigService>(),
+        get<_i4.FirebaseService>(),
+      ));
   return get;
 }
