@@ -35,8 +35,8 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   pmvvm: ^4.0.1
-  firebase_core: ^1.18.0
-  firebase_messaging: ^11.4.2
+  firebase_core: ^2.1.1
+  firebase_messaging: ^14.0.4
   get_it: ^7.2.0
   injectable: ^1.5.3
   basic_utils: ^5.2.0
