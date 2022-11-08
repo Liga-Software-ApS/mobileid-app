@@ -194,7 +194,8 @@ class GIDSCryptoApplet implements CryptoApplet {
 
     // check if the first key we find is sign or kex
     var sigOnly =
-        eq(cmapRecords.records.first.keyExchangeKeySizeBits, [0x00, 0x00]);
+        (eq(cmapRecords.records.first.keyExchangeKeySizeBits, [0x00, 0x00])
+            as bool);
 
     var containernum = keyRef - GidsConstants.GIDS_FIRST_KEY_IDENTIFIER;
 
@@ -473,7 +474,7 @@ class GidsMfRecord {
 
   @override
   String toString() {
-    return "Directory:${String.fromCharCodes(directory)}\nFile:${String.fromCharCodes(filename)}\nOID:${hex.encode(dataObjectIdentifier)}\nFID:${hex.encode(fileIdentifier)} ";
+    return "Directory:${String.fromCharCodes(directory)}\nFile:${hex.encode(filename)}\nOID:${hex.encode(dataObjectIdentifier)}\nFID:${hex.encode(fileIdentifier)} ";
   }
 }
 
