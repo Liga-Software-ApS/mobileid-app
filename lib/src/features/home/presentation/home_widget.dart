@@ -25,9 +25,11 @@ class _HomeView extends StatelessView<HomeViewModel> {
 
   @override
   Widget render(context, viewModel) {
+    var t = AppLocalizations.of(context)!;
+
     return Scaffold(
       appBar: AppBar(
-        title: const Text('MobileID'),
+        title: Text(t.appTitle),
         leading: GestureDetector(
           onTap: () {
             _toSettings(context);

@@ -88,11 +88,11 @@ class _NotificationView extends StatelessView<NotificationViewModel> {
       const SizedBox(height: 40),
       ElevatedButton(
           onPressed: () async => {await viewModel.refresh()},
-          child: const Text("Retry")),
+          child: Text(t.retry)),
       const SizedBox(height: 20),
       TextButton(
           onPressed: () async => {await viewModel.cancel()},
-          child: const Text("Cancel")),
+          child: Text(t.cancel)),
     ]);
   }
 }

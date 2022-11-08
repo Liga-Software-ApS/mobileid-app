@@ -32,7 +32,7 @@ class _AboutView extends StatelessView<AboutViewModel> {
         data: elevatedTheme,
         child: Scaffold(
             appBar: AppBar(
-              title: const Text('MobileID'),
+              title: Text(t.appTitle),
             ),
             body: SafeArea(
                 child: Padding(
@@ -53,7 +53,7 @@ class _AboutView extends StatelessView<AboutViewModel> {
                           ),
                           TextButton(
                             onPressed: () => {},
-                            child: const Text("Liga Software ApS"),
+                            child: Text(t.aboutLiga),
                           ),
                           const SizedBox(height: 20),
                           const Image(
@@ -62,7 +62,7 @@ class _AboutView extends StatelessView<AboutViewModel> {
                           ),
                           TextButton(
                             onPressed: () => {},
-                            child: const Text("Alexandra Instituttet ApS"),
+                            child: Text(t.aboutAlx),
                           ),
                           const SizedBox(height: 20),
                           const Image(
@@ -71,7 +71,7 @@ class _AboutView extends StatelessView<AboutViewModel> {
                           ),
                           TextButton(
                             onPressed: () => {},
-                            child: const Text("Cyber Hub"),
+                            child: Text(t.aboutHub),
                           ),
                         ]))))));
   }

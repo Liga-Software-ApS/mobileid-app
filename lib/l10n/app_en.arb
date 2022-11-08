@@ -123,7 +123,7 @@
     "@onboardingNotificationTitle": {
       "description": "Bla"
     },
-    "onboardingNotificationDescription": "Allow push notifications to make your sign in process easier",
+    "onboardingNotificationDescription": "Allow push notifications to make your sign-in process easier",
     "@onboardingNotificationDescription": {
       "description": "Bla"
     },
@@ -132,11 +132,25 @@
       "description": "Bla"
     }
     ,
-    "onboardingNotificationButtonReject": "Now now",
+    "onboardingNotificationButtonReject": "Not now",
     "@onboardingNotificationButtonReject": {
       "description": "Bla"
     },
 
+    "aboutLiga": "Liga Software ApS",
+    "aboutAlx": "Alexandra Instituttet ApS",
+    "aboutHub": "Cyber Hub",
+
+    "appTitle": "MobileID",
+
+    "retry": "Retry",
+    "cancel": "Cancel",
+
+    "settingsSectionCommon": "Common",
+    "settingsCommonReset": "Reset user",
+    "settingsSectionDeveloper": "Developer",
+    "settingsDeveloperOnboard": "Onboard",
+    "settingsSectionAbout": "About",
 
 
     "genericCancel": "Cancel",

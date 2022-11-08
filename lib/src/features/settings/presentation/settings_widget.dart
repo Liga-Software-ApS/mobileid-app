@@ -30,16 +30,16 @@ class _SettingsView extends StatelessView<SettingsViewModel> {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('MobileID'),
+        title: Text(t.appTitle),
       ),
       body: SettingsList(
         sections: [
           SettingsSection(
-            title: const Text('Common'),
+            title: Text(t.settingsSectionCommon),
             tiles: <SettingsTile>[
               SettingsTile.navigation(
                 leading: const Icon(Icons.language),
-                title: const Text("Reset user"),
+                title: Text(t.settingsCommonReset),
                 onPressed: (ctx) async => await viewModel.reset(),
               ),
               // SettingsTile.switchTile(
@@ -51,11 +51,11 @@ class _SettingsView extends StatelessView<SettingsViewModel> {
             ],
           ),
           SettingsSection(
-            title: const Text('Developer'),
+            title: Text(t.settingsSectionDeveloper),
             tiles: <SettingsTile>[
               SettingsTile.navigation(
                 leading: const Icon(Icons.developer_board),
-                title: const Text("Onboard"),
+                title: Text(t.settingsDeveloperOnboard),
                 onPressed: (ctx) => viewModel.toOnboard(),
               ),
               // SettingsTile.switchTile(
@@ -67,17 +67,17 @@ class _SettingsView extends StatelessView<SettingsViewModel> {
             ],
           ),
           SettingsSection(
-            title: const Text('About'),
+            title: Text(t.settingsSectionAbout),
             tiles: <SettingsTile>[
               SettingsTile.navigation(
                 leading: const Icon(Icons.info),
-                title: const Text("About"),
+                title: Text(t.settingsSectionAbout),
                 onPressed: (ctx) async => viewModel.toAbout(),
               ),
               SettingsTile.navigation(
                 leading: const Icon(Icons.copyright),
                 trailing: const Text(""),
-                title: const Text("Liga Software ApS"),
+                title: Text(t.aboutLiga),
                 onPressed: (ctx) async => viewModel.toAbout(),
               ),
             ],
