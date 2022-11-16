@@ -1,7 +1,5 @@
 # mobileid
 
-A new Flutter project.
-
 ## Getting Started
 
 <text is missing>
